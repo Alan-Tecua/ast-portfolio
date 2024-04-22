@@ -3,7 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
       '@nuxtjs/i18n',
+      '@nuxtjs/cloudinary',
     ],
+  // cloudinary: {
+  //   cloudName: 'nuxt-cloudinary'
+  // },
   pages: true,
   srcDir: 'src/',
   i18n: {
