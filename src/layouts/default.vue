@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
+import LanguageOpt from '@/components/inputs/LanguageOpt.vue';
 
 const route = useRoute();
 
@@ -30,7 +31,7 @@ useHead({
           </a>
         </div>
         <div>
-          <LanguagePicker/>
+          <LanguageOpt/>
         </div>
       </nav>
     </header>
