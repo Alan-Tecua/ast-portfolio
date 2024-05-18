@@ -1,0 +1,81 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown dialog {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.dropdown-content {
+  position: absolute;
+  left: 0;
+  max-width: 0;
+  max-height: calc(100vh - $spacing);
+  overflow: hidden;
+}
+
+.dropdown.is-open .dropdown-content {
+  min-width: $spacing * 20; // 24
+  max-width: 90vw;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.dropdown-content-right {
+  left: unset;
+  right: 0;
+}
+
+.dropdown.is-open .dropdown-content-fit {
+  min-width: fit-content;
+}
+
+.dropdown.is-open .dropdown-button::before {
+  content: ' ';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: hsla(0, 0%, 0%, .3);
+  z-index: 2;
+}
+
+.dropdown-content-scrollable {
+  height: fit-content;
+  max-height: 50vh;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overscroll-behavior-y: none;
+}
+
+.dropdown-content-scrollable-content {
+  height: 100%;
+  overflow: auto;
+}
+
+.dropdown-content-scrollable-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* ~ .dropdown-content-scrollable-content ul:first-child,
+.dropdown-content-scrollable-content * ~ ul {
+  border-top: 1px solid silver;
+}
+
+.dropdown-content-scrollable-content li {
+  text-align: start;
+}
+
+.dropdown-content-scrollable-content [role=menuitem]:hover {
+  cursor: pointer;
+  background-color: $c-primary;
+  color: $c-text-dark;
+}
