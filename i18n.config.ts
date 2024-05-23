@@ -1,3 +1,7 @@
+import en_common from '~/locales/en/common.json'
+import jp_common from '~/locales/jp/common.json'
+import es_common from '~/locales/es/common.json'
+
 export default defineI18nConfig(() => ({
   strategy: 'no_prefix',
   legacy: false,
@@ -5,18 +9,18 @@ export default defineI18nConfig(() => ({
   locale: 'en',
   defaultLocale: 'en',
   fallbackLocale: {
-    'default': ['en', 'ja'],
+    'default': ['en', 'jp'],
   },
   // TODO lazy load
   messages: {
     en: {
-      // ...en_common,
+      ...en_common,
     },
-    // ja: {
-    //   ...ja_common,
-    // },
-    fr: {
-      // ...fr_common,
+    jp: {
+      ...jp_common,
+    },
+    es: {
+      ...es_common,
     },
   }
 }))

@@ -6,5 +6,7 @@ useSeoMeta ({
 })
 </script>
 <template>
-Hallo
+<div>
+  <h1>{{ $t("seo.title") }}</h1>
+</div>
 </template>

@@ -11,7 +11,7 @@ const { locale } = useI18n();
 
 const languageIds = [
   'en',
-  'ja',
+  'jp',
   'es',
 ];
 

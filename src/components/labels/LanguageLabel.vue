@@ -9,7 +9,7 @@ const props = defineProps<PropsType>();
 
 const displayLanguage = computed(():string => {
   switch (props.language.toLowerCase()) {
-    case 'ja':
+    case 'jp':
       return '日本語'
     case 'en':
       return 'English'
