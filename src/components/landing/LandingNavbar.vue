@@ -5,6 +5,11 @@
 import { ref } from 'vue';
 import LanguageOpt from '@/components/inputs/LanguageOpt.vue';
 
+const props = defineProps<{
+  rootLocaleUrl?: string
+}>()
+
+const linkHref = ref(props.rootLocaleUrl ? props.rootLocaleUrl : '')
 const isNavOpen = ref(false)
 
 const toggleNav = () => {
@@ -34,8 +39,9 @@ const onLanguageChange = (option)=> {
 </script>
 
 <template>
-  <header>
-    <div>
+  <header :class="`header is-opened ${isNavOpen ? 'is-opened':''}`">
+    <div class="container header__wrapper">
+      <a :href="linkHref" @click="closeNav"><img src="/public/images/logos/Alan-light-logo.svg" alt="AlanTecuapetla" loading="lazy"/></a>
       <nav>
         <ul>
           <li>
@@ -44,7 +50,6 @@ const onLanguageChange = (option)=> {
               :locale="this.$i18n.locale"
               :onLanguageChange="onLanguageChange"
             />
-
           </li>
         </ul>
       </nav>

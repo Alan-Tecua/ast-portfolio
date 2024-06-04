@@ -1,0 +1,7 @@
+.header {
+  &.is-opened {
+    .header__links {
+      display: block;
+    }
+  }
+}
