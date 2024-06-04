@@ -31,7 +31,6 @@ useHead({
           </a>
         </div>
         <div>
-          <LanguageOpt/>
         </div>
       </nav>
     </header>

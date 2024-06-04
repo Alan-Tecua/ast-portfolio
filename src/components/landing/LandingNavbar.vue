@@ -1,5 +1,5 @@
-<i18n src="@/locales/jp/home.json"></i18n>
-<i18n src="@/locales/en/home.json"></i18n>
+<!-- <i18n src="@/locales/jp/home.json"></i18n>
+<i18n src="@/locales/en/home.json"></i18n> -->
 
 <script setup lang="ts">
 import { ref } from 'vue';
@@ -41,15 +41,15 @@ const onLanguageChange = (option)=> {
 <template>
   <header :class="`header is-opened ${isNavOpen ? 'is-opened':''}`">
     <div class="container header__wrapper">
-      <a :href="linkHref" @click="closeNav"><img src="/public/images/logos/Alan-light-logo.svg" alt="AlanTecuapetla" loading="lazy"/></a>
+      <a :href="linkHref" @click="closeNav"><img src="/public/images/logos/Alan-light-logo.svg" style="width: 2rem;" class="logo_header" alt="AlanTecuapetla" loading="lazy"/></a>
       <nav>
         <ul>
           <li>
-            <LanguageOpt
-              :options="languageOptions"
-              :locale="this.$i18n.locale"
-              :onLanguageChange="onLanguageChange"
-            />
+              <LanguageOpt/>
+              <!-- <LanguageOpt
+                :options="languageOptions"
+                :onLanguageChange="onLanguageChange"
+              /> -->
           </li>
         </ul>
       </nav>
