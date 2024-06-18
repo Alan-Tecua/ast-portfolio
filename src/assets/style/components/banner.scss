@@ -1,0 +1,16 @@
+.banner-info {
+  width: 100%;
+  padding: $spacing-2;
+  border-radius: $radius;
+}
+
+.banner-info--green {
+  display: inline-flex;
+  align-items: center;
+  background-color: $success-200;
+  color: $success-500;
+}
+
+.banner-info__icon {
+  margin-right: $spacing-1;
+}
