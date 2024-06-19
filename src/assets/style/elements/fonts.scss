@@ -1,0 +1,80 @@
+body {
+  font-size: 16px;
+}
+
+h1,
+.h1 {
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+}
+
+h2,
+.h2 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.59px;
+}
+
+h3,
+.h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  color: #413936;
+}
+
+h4,
+.h4,
+.btn {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ft-primary {
+  line-height: 24px !important;
+}
+
+.ft-secondary,
+.tag {
+  font-size: 14px;
+}
+
+.h-mega {
+  word-break: keep-all;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.c-purple { color: $purple; }
+
+@media (min-width: $grid-breakpoints-md) {
+  .h-mega {
+    font-size: 53px;
+    line-height: 64px;
+  }
+
+  h1,
+  .h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
