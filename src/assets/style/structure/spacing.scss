@@ -1,0 +1,138 @@
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 1;
+}
+
+.m-3 {
+  margin: 3;
+}
+
+.m-inline-auto {
+  margin-inline: auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-05 {
+  padding: $spacing * 0.5;
+}
+
+.p-1 {
+  padding: $spacing;
+}
+
+.p-2 {
+  padding: $spacing * 2;
+}
+
+.p-3 {
+  padding: $spacing * 3;
+}
+
+.p-4 {
+  padding: $spacing * 4;
+}
+
+.p-5 {
+  padding-top: $spacing * 5;
+}
+
+.p-lr-1,
+.p-inline-1 {
+  padding-left: $spacing;
+  padding-right: $spacing;
+}
+
+.p-lr-2,
+.p-inline-2 {
+  padding-left: $spacing * 2;
+  padding-right: $spacing * 2;
+}
+
+.p-lr-3,
+.p-inline-3 {
+  padding-left: $spacing * 3;
+  padding-right: $spacing * 3;
+}
+
+.p-block-05 {
+  padding-block: $spacing * 0.5;
+}
+
+.colgap-05 {
+  column-gap: $spacing * 0.5;
+}
+
+.colgap-1 {
+  column-gap: $spacing;
+}
+
+.colgap-2 {
+  column-gap: $spacing * 2;
+}
+
+.colgap-3 {
+  column-gap: $spacing * 3;
+}
+
+.colgap-4 {
+  column-gap: $spacing * 4;
+}
+
+.colgap-5 {
+  column-gap: $spacing * 5;
+}
+
+.colgap-6 {
+  column-gap: $spacing * 6;
+}
+
+.rowgap-05 {
+  row-gap: $spacing * 0.5;
+}
+
+.rowgap-1 {
+  row-gap: $spacing;
+}
+
+.rowgap-2 {
+  row-gap: $spacing * 2;
+}
+
+.rowgap-3 {
+  row-gap: $spacing * 3;
+}
+
+.rowgap-4 {
+  row-gap: $spacing * 4;
+}
+
+.divider {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 1px;
+  border-radius: 50px;
+  background-color: rgba(128, 124, 125, 1);
+}
+
+.register-btn {
+  justify-content: space-between;
+  padding-bottom: 35rem;
+}
+
+.pad-b-1 {
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .register-btn {
+    padding-bottom: 25rem;
+  }
+}
