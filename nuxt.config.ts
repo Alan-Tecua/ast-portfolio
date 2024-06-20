@@ -40,11 +40,11 @@ export default defineNuxtConfig({
     },
     pageTransition: {
       name: 'page',
-      mode: 'out-in' // default
+      mode: 'out-in'
     },
     layoutTransition: {
       name: 'layout',
-      mode: 'out-in' // default
+      mode: 'out-in'
     },
   },
   i18n: {
