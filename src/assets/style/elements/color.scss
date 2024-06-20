@@ -29,3 +29,37 @@ span {
   border-radius: 12px;
   border: 1px solid rgba(44,43,43, 0.125);
 }
+
+.bg-white {
+  background-color: $c-white;
+}
+
+.bg-gray {
+  background-color: $c-gray;
+}
+
+.bg-primary {
+  background-color: $c-palette-1;
+}
+
+.bg-secondary {
+  background-color: $c-palette-2;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.border-primary {
+  border-color: $c-palette-1;
+}
+
+.border-secondary {
+  border-color: $c-palette-2;
+}
+
+a .active-box-shadow-bg-white:hover,
+a:active .active-box-shadow-bg-white,
+a:focus .active-box-shadow-bg-white {
+  background-color: $c-white;
+}
